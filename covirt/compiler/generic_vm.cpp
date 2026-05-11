@@ -1,4 +1,5 @@
 #include "generic_vm.hpp"
+#include "../compiler/generic_emitter.hpp"
 #include <utils/log.hpp>
 
 constexpr std::size_t page_size = 4096;

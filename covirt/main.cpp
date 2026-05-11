@@ -124,7 +124,7 @@ int main(int argc, char **argv)
     covirt::vm::v0_lifter lifter;
     auto lifted = lift(routines, lifter, x);
 
-    out::assertion(lifted.bytes.size() < code_size, "ran out of code space, try using '-vcode {}'", lifted.bytes.size() + 1);
+    out::assertion(lifted.bytes.size() >= code_size, "ran out of code space, try using '-vcode {}'", lifted.bytes.size() + 1);
 
     if (program.get<bool>("-d"))
         covirt::vm::debug::dump_v0(lifted);

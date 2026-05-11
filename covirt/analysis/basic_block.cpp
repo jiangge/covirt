@@ -4,6 +4,7 @@
 #include <utils/log.hpp>
 
 #include <queue>
+#include <unordered_map>
 #include <set>
 
 covirt::subroutine covirt::decompose_bb(basic_block &bb)

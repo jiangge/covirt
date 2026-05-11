@@ -86,3 +86,5 @@ namespace covirt {
         }
     };
 }
+
+namespace covirt { inline uint32_t g_bytecode_key = 0xAAC0DEFE; }
